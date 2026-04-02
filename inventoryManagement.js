@@ -1,16 +1,5 @@
 // Write your code here
 
-
-
-// Export the necessary parts for testing
-module.exports = {
-  logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
-  addProduct: typeof addProduct !== 'undefined' ? addProduct : undefined,
-  updateProductName: typeof updateProductName !== 'undefined' ? updateProductName : undefined,
-  removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
-  products
-};
-
 let products = ["Laptop", "Phone", "Tablet", "Monitor",];
 function logFirstProduct() {  console.log(products[0]);
 }
@@ -22,3 +11,12 @@ function updateProductName(index, newName) {  if (index >= 0 && index < products
 }
 function removeLastProduct() {  products.pop();
 }
+
+// Export the necessary parts for testing
+module.exports = {
+  logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
+  addProduct: typeof addProduct !== 'undefined' ? addProduct : undefined,
+  updateProductName: typeof updateProductName !== 'undefined' ? updateProductName : undefined,
+  removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
+  products
+};
