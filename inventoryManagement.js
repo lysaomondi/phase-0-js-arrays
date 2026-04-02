@@ -10,3 +10,15 @@ module.exports = {
   removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
   products
 };
+
+let products = ["Laptop", "Phone", "Tablet", "Monitor",];
+function logFirstProduct() {  console.log(products[0]);
+}
+function addProduct(product) {  products.push(product);
+}
+function updateProductName(index, newName) {  if (index >= 0 && index < products.length) {
+    products[index] = newName;
+  }
+}
+function removeLastProduct() {  products.pop();
+}
